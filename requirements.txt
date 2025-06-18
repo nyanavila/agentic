@@ -1,0 +1,28 @@
+# requirements.txt
+
+# --- Your Existing Packages ---
+crewai==0.28.8
+crewai_tools==0.1.6
+langchain_community==0.0.29
+python-dotenv
+openai
+pydantic>=2.4.2,<3.0.0
+protobuf<5
+requests-toolbelt<1
+
+# --- Additions for Advanced RAG and Tools ---
+
+# For local embeddings with Hugging Face
+langchain-huggingface
+sentence-transformers
+transformers
+
+# For connecting to your Milvus vector database
+pymilvus
+
+# For the SerperDevTool web search capability
+google-search-results
+
+# For the ChromaDB/SQLite hotfix in your Containerfile
+chromadb
+pysqlite3-binary
